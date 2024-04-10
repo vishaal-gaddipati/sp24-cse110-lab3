@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Lab 2 Meeting Minutes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div>CSE 110</div>
+        <h1> CSE 110 Lab 2 Meeting Minutes </h1>
+        <h2> Meeting Topic : Brainstorm </h2>
+        <img
+        class="brainstorm-picture"
+        src="brainstorming-techniques.png" width="300"
+        alt="Animated image of three people brainstorming" />
+        <h3> Date : April 10, 2024</h3>
+
+        <hr />
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#present_members">Present Members</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Unfinished Business</a></li>
+                <li><a href="#new">New Business</a></li>
+                <li><a href="#comments">Comments/Questions/Concerns</a></li>
+                <li><a href="#diagrams">Diagrams/Audio</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="present_members"> Present Members </h2>
+            <ul>
+                <li>Vishaal: <span class="job">Team Lead</span>, <span class="day">Developer</span></li>
+                <li>Bill: <span class="job">Project Manager</span></li>
+                <li>Tim: <span class="job">Testing</span></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2 id="agenda"> Agenda </h2>
+            <p> Create <b class="term">GitHub</b> repo and beginning planning for project. </p>
+        </section>
+
+        <section>
+            <h2 id="unfinished"> Unfinished Business </h2>
+            <ol>
+                <li>Finish Introductions</li>
+                <li>Do Team Branding</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 id="new"> New Business </h2>
+            <em>Plan</em> <strong>Team Video</strong> <em>Today</em>!
+        </section>
+
+        <section>
+            <h2 id="comments"> Comments/Questions/Concerns </h2>
+            What should we use to coordinate our <i>time slots</i> for availability?
+        </section>
+
+        <section>
+            <h2 id="diagrams"> Diagrams/Audio </h2>
+            <details open="false">
+                <summary>
+                    Cool links!
+                </summary>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Mozilla Docs</a> <br />
+                Start Early <br />
+                Start Often!
+            </details>
+
+            <figure>
+                <figcaption>Get motivated!</figcaption>
+                <audio controls src="Teamwork motivational video.mp3"></audio>
+              </figure>
+
+            <video controls width="250">
+                <source src="Teamwork motivational video.mp4" type="video/mp4" />
+            </video>
+        </section>
+
+    </main>
+    <footer>
+        <p>2024 CSE 110</p>
+        <form>
+            <fieldset>
+                <legend>
+                    Fill form
+                </legend>
+
+                <input type="checkbox" id="meeting" name="checkbox"/>
+                <label for="meeting">Remote</label><br />
+
+                <input type="radio" id="present" name="radio"/>
+                <label for="present">Present for Meeting</label><br />
+
+                Enter Name: <input type="text" name="text"/><br />
+
+                <input type="date" name="date"/><br />
+
+                <label for="background">Tell us your background:</label><br />
+                <textarea id="background" name="background" rows="5" cols="33">TEXT HERE
+                </textarea><br />
+
+                <label for="day-choice">Choose a day to meet next:</label>
+                <input list="days" id="day-choice" name="day-choice" />
+
+                <datalist id="days">
+                    <option value="Monday"></option>
+                    <option value="Tuesday"></option>
+                    <option value="Wednesday"></option>
+                    <option value="Thursday"></option>
+                    <option value="Friday"></option>
+                </datalist><br />
+
+                <label for="time-select">Choose a time:</label>
+
+                <select name="times" id="time-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="1pm">1 PM</option>
+                    <option value="2pm">2 PM</option>
+                    <option value="3pm">3 PM</option>
+                    <option value="4pm">4 PM</option>
+                    <option value="5pm">5 PM</option>
+                    <option value="n/a">N/A</option>
+                </select><br />
+
+            <button class="submission" type="button">Submit</button>
+
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
