@@ -46,6 +46,7 @@
     border-color: black;
     border-width: 4px;
     border-radius: 10px;
+    display: block; /* Display block */
   }
 .alternate {
     box-sizing: border-box;
@@ -60,6 +61,7 @@
   }
 .auto {
     margin: auto;
+    display: inline-block; /* Display inline-block */
     padding: 30px 20px 30px 3em;
 }
 
