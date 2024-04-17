@@ -38,8 +38,8 @@
 
 /* box model */
 .box {
-    width: 350px;
-    height: 150px;
+    width: 250px; /* width */
+    height: 150px; /* height */
     margin: 25px 50px 50px 14em;
     padding: 25px;
     border-style: solid;
@@ -49,6 +49,8 @@
     display: block; /* Display block */
   }
 .alternate {
+    max-width: 240px; /* max-width */
+    max-height: 130px; /* max-height */
     box-sizing: border-box;
     margin-top: 10px;
     margin-right: 30px;
