@@ -37,6 +37,33 @@
     border: 0.05in solid blue;
 }
 
+/* box model */
+.box {
+    width: 350px;
+    height: 150px;
+    margin: 25px 50px 50px 14em;
+    padding: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 10px;
+  }
+.alternate {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 4em;
+  }
+.auto {
+    margin: auto;
+    padding: 30px 20px 30px 3em;
+}
+
 /* CSS File comment */
 h1 {
     color: var(hsl(0, 0%, 40%), --heading-color); /* hue, saturation, lightness, alpha values */
