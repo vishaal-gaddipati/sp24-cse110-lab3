@@ -1,7 +1,6 @@
 /* Define CSS variables with fallbacks */
 :root {
-    --heading-color: white; /* Fallback value for heading color */
-    --footer-color: white; /* Default value for footer color */
+    --footer-color: white; /* Fallback value for footer color */
  }
 
 /* 3 unique relative units */ 
@@ -64,9 +63,15 @@
     padding: 30px 20px 30px 3em;
 }
 
+/* Text */
+.under {
+    text-decoration: underline red;
+    text-align: center;
+}
+
 /* CSS File comment */
 h1 {
-    color: var(hsl(0, 0%, 40%), --heading-color); /* hue, saturation, lightness, alpha values */
+    color: hsl(0, 0%, 40%); /* hue, saturation, lightness, alpha values */
  }
  
  
@@ -81,5 +86,5 @@ h1 {
  
  
  footer {
-    color: var(--footer-color, color-mix(in srgb, #eb3434, grey)); /*method to mix colors, values & percentages of color*/
+    color: var(color-mix(in srgb, #eb3434, grey), --footer-color); /*method to mix colors, values & percentages of color*/
  } 
