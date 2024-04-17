@@ -1,0 +1,19 @@
+/* CSS File comment */
+h1 {
+    color:hsl(0, 0%, 40%); /* hue, saturation, lightness, alpha values */
+ }
+ 
+ 
+ h2 {
+    color:dodgerblue;
+ }
+ 
+ 
+ h3 {
+    color: color(srgb 0 0 1);  /* predefined color space, values for color space*/
+ }
+ 
+ 
+ footer {
+    color: color-mix(in srgb, #eb3434, grey); /*method to mix colors, values & percentages of color*/
+ } 
