@@ -66,6 +66,17 @@
     display: inline-block; /* Display inline-block */
     padding: 30px 20px 30px 3em;
 }
+/* position */
+#one {
+    position: static;
+    background: lightcoral;
+}
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: lightblue;
+  }
 
 /* Text */
 .under {
