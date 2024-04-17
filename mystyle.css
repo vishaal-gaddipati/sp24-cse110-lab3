@@ -2,7 +2,40 @@
 :root {
     --heading-color: white; /* Fallback value for heading color */
     --footer-color: white; /* Default value for footer color */
-  }
+ }
+
+/* 3 unique relative units */ 
+.wrapper {
+    font-size: 1.5rem;
+ }
+
+.ch {
+    width: 150ch;
+ }
+  
+.vw {
+    width: 100vw;
+ }
+  
+.em {
+    width: 10em;
+ }
+
+/* 3 unique absolute units */
+.pres {
+    width: 60px;
+    border: 5px solid red;
+}
+
+.unfi {
+    width: 4cm;
+    border: 0.1cm solid green;
+}
+
+.comm {
+    width: 2.4in;
+    border: 0.05in solid blue;
+}
 
 /* CSS File comment */
 h1 {
