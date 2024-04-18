@@ -3,8 +3,12 @@
     --footer-color: white; /* Fallback value for footer color */
  }
 
+ * { /*UNIVERSAL SELECTOR*/
+    font-family: "Nimbus Roman", Times, serif;
+}
+
 /* 3 unique relative units */ 
-.wrapper {
+.wrapper { /*CLASS SELECTOR*/
     font-size: 1.5rem;
  }
 
@@ -67,7 +71,7 @@
     padding: 30px 20px 30px 3em;
 }
 /* position */
-#one {
+#one { /*ID SELECTOR*/
     position: static;
     background: lightcoral;
 }
@@ -85,7 +89,7 @@
 }
 
 /* Psuedo-classes */
-button:hover {
+button:hover { /*PSUEDO-CLASS SELECTOR*/
     color: blue;
 }
 button:active {
@@ -101,15 +105,13 @@ button:active {
   }
 .item {
     border: 2px solid black;
+    padding: 0px 10px 0px 0px;
 }
 .grid-container { /*Grid*/
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-    grid-template:
-    [row1-start] "header header header" 25px [row1-end]
-    [row2-start] "footer footer footer" 25px [row2-end]
-    / auto 50px auto;
+    row-gap: 0px;
 }
 
 /* Responsiveness
@@ -160,9 +162,58 @@ button:active {
     font-style: normal;
   }
   
+/*ATTRIBUTE SELECTOR*/
+a[href="#agenda"]
+{
+    color: red;
+}
+
+/*SELECTOR LIST*/
+h2,
+h3 {
+    font-size: 23px;
+}
+
+/*DESCENDANT COMBINATOR*/
+div p {
+    background-color:springgreen;
+}
+/*CHILD COMBINATOR*/
+ul > li {
+    border-top: 1px solid black;
+  }
+/*GENERAL SIBLING COMBINATOR*/
+div ~ li {
+    font-weight: bold;
+    background-color: lightgray;
+    color: #fff;
+    padding: .5em;
+  }
+/*ADJACENT SIBLING COMBINATOR*/
+div + h2 {
+    font-style: italic;
+    background-color: black;
+    color:chartreuse;
+    padding: .5em;
+}
+/*COMBINING TWO SELECTORS*/
+div.box {
+    border: 1px solid white;
+}
+/*HAS SELECTOR*/
+li:has(a) {
+    font-style: italic;
+}
+/*NESTED SELECTORS*/
+section {
+    background-color: bisque;
+    &:hover {
+        color: red;
+    }
+}
 
 /* CSS File comment */
-h1 {
+h1 { /*ELEMENT SELECTOR*/
     color: hsl(0, 0%, 40%); /* hue, saturation, lightness, alpha values */
  }
  
