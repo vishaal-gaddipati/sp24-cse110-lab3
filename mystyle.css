@@ -112,6 +112,43 @@ button:active {
     / auto 50px auto;
 }
 
+/* Responsiveness
+/*very small screens*/
+@media only screen and (max-width: 600px) {
+    body {
+        font-size:16px;
+    }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        width: 80%;
+    }
+    .box {
+        margin-left: 0; /* FIXED AGENDA BOX ALIGNMENT FOR PHONE SIZED SCREEN */
+    }
+}
+/*tablets or smaller laptops*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wrapper {
+        font-size: 1.2rem;
+    }
+}
+/*desktops*/
+@media only screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box {
+        width: 300px;
+    }
+}
+
+
 /* CSS File comment */
 h1 {
     color: hsl(0, 0%, 40%); /* hue, saturation, lightness, alpha values */
