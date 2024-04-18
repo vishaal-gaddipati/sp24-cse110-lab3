@@ -84,6 +84,15 @@
     text-align: center;
 }
 
+/* Psuedo-classes */
+button:hover {
+    color: blue;
+}
+button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+  }
+  
+
 /* CSS File comment */
 h1 {
     color: hsl(0, 0%, 40%); /* hue, saturation, lightness, alpha values */
