@@ -92,6 +92,25 @@ button:active {
     box-shadow: 2px 2px 5px #fc894d;
   }
   
+/* Layouts */
+.flex-container {
+    display: flex; /*Flexbox*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+.item {
+    border: 2px solid black;
+}
+.grid-container { /*Grid*/
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5px;
+    grid-template:
+    [row1-start] "header header header" 25px [row1-end]
+    [row2-start] "footer footer footer" 25px [row2-end]
+    / auto 50px auto;
+}
 
 /* CSS File comment */
 h1 {
